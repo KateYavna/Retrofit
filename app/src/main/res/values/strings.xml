@@ -1,0 +1,29 @@
+<!DOCTYPE resources [
+
+]>
+<resources>
+    <string name="app_name">Retrofit</string>
+    <string name="btValue">Show the bitcoin value</string>
+    <string name="tvDisclaimer">This data was produced from the CoinDesk Bitcoin Price Index (USD).
+        Non-USD currency data converted using hourly conversion rate from openexchangerates.org</string>
+    <string name="btRefresh">Refresh</string>
+    <string name="tvTime3">Aug 7, 2021 at 15:54 BST</string>
+    <string name="tvUpdateduk">Updateduk</string>
+    <string name="tvUpdatedISO">UpdatedISO</string>
+    <string name="tvTime2">2021-08-07T14:54:00+00:00</string>
+    <string name="tvUpdated">Updated</string>
+    <string name="tvTime1">Aug 7, 2021 14:54:00 UTC</string>
+    <string name="tvUSD">USD</string>
+    <string name="tvUSDdescription">United States Dollar</string>
+    <string name="tvUSDsymbol">&#36;</string>
+    <string name="tvUSDrate">43,547.7236</string>
+    <string name="tvUSDrate_float">43547.7236</string>
+    <string name="tvGBP">GBP</string>
+    <string name="tvGBPdescription">British Pound Sterling</string>
+    <string name="tvGBPrate">31,385.7589</string>
+    <string name="tvGBPrate_float">31385.7589</string>
+    <string name="tvEUR">EUR</string>
+    <string name="tvEURdescription">Euro</string>
+    <string name="tvEURrate">37,021.5746</string>
+    <string name="tvEURrate_float">37021.5746</string>
+</resources>

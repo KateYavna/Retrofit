@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/purple_500"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btShow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@color/red"
+        android:padding="8dp"
+        android:text="@string/btValue"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvDisclaimer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginBottom="16dp"
+        android:gravity="center"
+        android:padding="8dp"
+        android:text="@string/tvDisclaimer"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btRefresh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:background="@color/blue"
+        android:text="@string/btRefresh"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/tvDisclaimer"
+        app:layout_constraintEnd_toEndOf="@+id/tvDisclaimer"
+        app:layout_constraintStart_toStartOf="@+id/tvDisclaimer" />
+
+    <TextView
+        android:id="@+id/tvTime3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:layout_marginLeft="52dp"
+        android:padding="8dp"
+        android:text="@string/tvTime3"
+        android:textColor="@color/blue"
+        android:visibility="invisible"
+        app:layout_constraintStart_toEndOf="@+id/tvUpdateduk"
+        app:layout_constraintTop_toTopOf="@+id/tvUpdateduk" />
+
+    <TextView
+        android:id="@+id/tvUpdateduk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginBottom="60dp"
+        android:padding="8dp"
+        android:text="@string/tvUpdateduk"
+        android:textColor="@color/blue"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/btRefresh"
+        app:layout_constraintEnd_toStartOf="@+id/btRefresh" />
+
+    <TextView
+        android:id="@+id/tvUpdatedISO"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:padding="8dp"
+        android:text="@string/tvUpdatedISO"
+        android:textColor="@color/blue"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/tvUpdateduk"
+        app:layout_constraintStart_toStartOf="@+id/tvUpdateduk" />
+
+    <TextView
+        android:id="@+id/tvTime2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:padding="8dp"
+        android:text="@string/tvTime2"
+        android:textColor="@color/blue"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/tvTime3"
+        app:layout_constraintEnd_toEndOf="@+id/tvTime3" />
+
+    <TextView
+        android:id="@+id/tvUpdated"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="@string/tvUpdated"
+        android:padding="8dp"
+        android:textColor="@color/blue"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/tvUpdatedISO"
+        app:layout_constraintStart_toStartOf="@+id/tvUpdatedISO" />
+
+    <TextView
+        android:id="@+id/tvTime1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:padding="8dp"
+        android:text="@string/tvTime1"
+        android:textColor="@color/blue"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/tvTime2"
+        app:layout_constraintEnd_toEndOf="@+id/tvTime2" />
+
+    <TextView
+        android:id="@+id/tvUSD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:padding="8dp"
+        android:text="@string/tvUSD"
+        android:textColor="@color/red"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/btShow"
+        app:layout_constraintStart_toStartOf="@+id/btShow"
+        app:layout_constraintTop_toBottomOf="@+id/btShow" />
+
+    <TextView
+        android:id="@+id/tvUSDdescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:padding="8dp"
+        android:text="@string/tvUSDdescription"
+        android:textColor="@color/red"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvUSD" />
+
+    <TextView
+        android:id="@+id/tvUSDsymbol"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:padding="8dp"
+        android:text="@string/tvUSDsymbol"
+        android:textColor="@color/red"
+        app:layout_constraintStart_toEndOf="@+id/tvUSDdescription"
+        app:layout_constraintTop_toTopOf="@+id/tvUSDdescription" />
+
+    <TextView
+        android:id="@+id/tvUSDrate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:padding="8dp"
+        android:text="@string/tvUSDrate"
+        android:textColor="@color/red"
+        android:visibility="invisible"
+        app:layout_constraintStart_toEndOf="@+id/tvUSDsymbol"
+        app:layout_constraintTop_toTopOf="@+id/tvUSDsymbol" />
+
+    <TextView
+        android:id="@+id/tvUSDrate_float"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:padding="8dp"
+        android:text="@string/tvUSDrate_float"
+        android:textColor="@color/red"
+        android:visibility="invisible"
+        app:layout_constraintStart_toEndOf="@+id/tvUSDrate"
+        app:layout_constraintTop_toTopOf="@+id/tvUSDrate" />
+
+    <TextView
+        android:id="@+id/tvGBP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="16dp"
+        android:padding="8dp"
+        android:text="@string/tvGBP"
+        android:textColor="@color/blue"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/tvUSDsymbol"
+        app:layout_constraintTop_toBottomOf="@+id/tvUSDrate" />
+
+    <TextView
+        android:id="@+id/tvGBPdescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:padding="8dp"
+        android:text="@string/tvGBPdescription"
+        android:textColor="@color/blue"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/ivPound" />
+
+    <ImageView
+        android:id="@+id/ivPound"
+        android:layout_width="29dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toEndOf="@+id/tvGBPdescription"
+        app:layout_constraintTop_toBottomOf="@+id/tvGBP"
+        app:srcCompat="@drawable/pound" />
+
+    <TextView
+        android:id="@+id/tvGBPrate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:padding="8dp"
+        android:text="@string/tvUSDrate"
+        android:textColor="@color/blue"
+        android:visibility="invisible"
+        app:layout_constraintStart_toEndOf="@+id/ivPound"
+        app:layout_constraintTop_toTopOf="@+id/ivPound" />
+
+    <TextView
+        android:id="@+id/tvGBPrate_float"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:padding="8dp"
+        android:text="@string/tvUSDrate_float"
+        android:textColor="@color/blue"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tvGBPrate"
+        app:layout_constraintTop_toTopOf="@+id/tvGBPrate" />
+
+    <TextView
+        android:id="@+id/tvEUR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="16dp"
+        android:padding="8dp"
+        android:text="@string/tvEUR"
+        android:textColor="@color/green"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/ivPound"
+        app:layout_constraintTop_toBottomOf="@+id/tvGBPrate" />
+
+    <TextView
+        android:id="@+id/tvEURdescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="16dp"
+        android:padding="8dp"
+        android:text="@string/tvEURdescription"
+        android:textColor="@color/green"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvEUR" />
+
+    <ImageView
+        android:id="@+id/ivEuro"
+        android:layout_width="21dp"
+        android:layout_height="19dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toEndOf="@+id/tvEURdescription"
+        app:layout_constraintTop_toTopOf="@+id/tvEURdescription"
+        app:srcCompat="@drawable/euro" />
+
+    <TextView
+        android:id="@+id/tvEURrate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:padding="8dp"
+        android:text="@string/tvEURrate"
+        android:textColor="@color/green"
+        android:visibility="invisible"
+        app:layout_constraintStart_toEndOf="@+id/ivEuro"
+        app:layout_constraintTop_toTopOf="@+id/tvEURdescription" />
+
+    <TextView
+        android:id="@+id/tvEURrate_float"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:padding="8dp"
+        android:text="@string/tvEURrate_float"
+        android:textColor="@color/green"
+        android:visibility="invisible"
+        app:layout_constraintStart_toEndOf="@+id/tvEURrate"
+        app:layout_constraintTop_toTopOf="@+id/tvEURrate" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
